@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<head>
+    <script src="/socket.io/socket.io.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+</head>
+<body>
+
+<div class="container">
+    <h2>Drug Collections</h2>
+
+    <h3>Search Drugs</h3>
+    <div class="container">
+
+
+        <br>
+        <br>
+
+        <form name="form">
+            <input type="text" name="inp" placeholder="search" id="search-box">
+        </form>
+
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>match</th>
+                <th>id</th>
+            </tr>
+            </thead>
+            <tbody id="search-results">
+            </tbody>
+        </table>
+
+        <script type="text/javascript">
+
+            var socket = io.connect();
+            search_box = document.getElementById('search-box');
+            var data = {};
+            var list = '';
+            var err_msg = 'Sorry, no content matched your criteria, try again!'
+
+            // do the function with every keystroke
+            search_box.onkeyup = function() {
+                data.query = this.value;
+                if (this.value == null || this.value == '' || this.value == ' '){
+                    document.getElementById('search-results').innerHTML = '';
+                }else{
+                    socket.emit('submit', data);
+                    list = '';
+                    list_q = '';
+                    count = 1;
+                }
+            };
+
+            socket.on('result', function(result) {
+                if (result.length <= 0){
+                    document.getElementById('search-results').innerHTML = '<h4>'+ err_msg + '</h4>';
+                }else{
+                    for (var i = 0; i < result.length; i++) {
+                        count = 1;
+                        count = count + i;
+                        list += '<tr><th scope="row">'+ count+'</th><td>'+result[i].namemain+'</td>'+'<td>'+result[i].id+'</td></tr>';
+                        document.getElementById('search-results').innerHTML = list;
+                    };
+                };
+            });
+
+
+        </script>
+    </div>
+</div>
+</body>

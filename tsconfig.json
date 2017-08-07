@@ -1,0 +1,208 @@
+[{
+  "namemain": "Prednisolone",
+  "id": "70002",
+  "NamesBrand": {
+      "Name": [
+          "Predonine",
+          "Prelone"
+      ]
+    },
+  "NamesGeneric":
+  {
+    "Name": ["Prednisolone"]
+  }
+},
+
+
+
+{
+  "namemain": "Cyclophosphamide",
+  "id": "70020",
+  "NamesBrand": {
+    "Name": [
+      "Cytoxan",
+      "Endoxan",
+      "Endoxana",
+      "Neosar",
+      "Revimmune"
+    ]
+  },
+  "NamesGeneric":
+  {
+    "Name": ["Cyclophosphamide"]
+  }
+},
+{
+  "namemain": "Prednisolone",
+  "id": "70001",
+  "NamesBrand": {
+  "Name": [
+    "Predonine",
+    "Prelone"
+    ]
+  },
+  "NamesGeneric":
+  {
+  "Name": ["Prednisolone"]
+  }
+},
+
+
+  {
+  "namemain": "Erythromycin",
+  "id": "70002",
+  "NamesBrand": {
+    "Name": [
+      "E-Mycin",
+      "Emgel",
+      "Eryacne",
+      "Eryc",
+      "Erymax",
+      "PCE"
+    ]
+  },
+  "NamesGeneric":
+  {
+    "Name": ["Erythromycin"]
+  }
+},
+
+
+  {
+    "namemain": "Pyrimethamine",
+    "id": "70197",
+    "NamesBrand": {
+      "Name": [
+        "Daraprim"
+      ]
+    },
+    "NamesGeneric":
+    {
+      "Name": ["Pyrimethamine"]
+    }
+  },
+
+
+  {
+    "namemain": "Novobiocin sodium",
+    "id": "70381",
+    "NamesBrand": {
+      "Name": [
+        "Albamycin"
+      ]
+    },
+    "NamesGeneric":
+    {
+      "Name": ["Novobiocin sodium"]
+    }
+  },
+
+
+  {
+    "namemain": "Prednisolone",
+    "id": "70002",
+    "NamesBrand": {
+      "Name": [
+        "Predonine",
+        "Prelone"
+      ]
+    },
+    "NamesGeneric":
+    {
+      "Name": ["Prednisolone"]
+    }
+  },
+
+
+  {
+    "namemain": "Dexamethasone",
+    "id": "70529",
+    "NamesBrand": {
+      "Name": [
+        "Decadron",
+        "DexaSite"
+      ]
+    },
+    "NamesGeneric":
+    {
+      "Name": ["Dexamethasone"]
+    }
+  },
+
+
+  {
+    "namemain": "Sulfasalazine",
+    "id": "70531",
+    "NamesBrand": {
+      "Name": [
+        "Azulfidine",
+        "Salazopyrin",
+        "Salazopyrine"
+      ]
+    },
+    "NamesGeneric":
+    {
+      "Name": [
+        "Salazosulfapyridine",
+        "Sulfasalazine",
+        "Sulphasalazine"
+      ]
+    }
+  },
+
+
+  {
+  "namemain": "Doxorubicin hydrochloride",
+  "id": "80003",
+  "NamesBrand": {
+    "Name": [
+      "Adriacin",
+      "Adriamycin",
+      "Adriblastina",
+      "Resmycin"
+    ]
+  },
+  "NamesGeneric":
+  {
+    "Name": ["Prednisolone"]
+  }
+},
+
+
+  {
+    "namemain": "Felodipine",
+    "id": "70002",
+    "NamesBrand": {
+      "Name": [
+        "Flodil",
+        "Hydac",
+        "Logimax",
+        "Munobal"
+      ]
+    },
+    "NamesGeneric":
+    {
+      "Name": ["Felodipine"]
+    }
+  },
+
+  {
+    "namemain": "Ulinastatin",
+    "id": "90099",
+    "NamesBrand": {
+      "Name": [
+        "Aerolytic",
+        "Miraclid"
+      ]
+    },
+    "NamesGeneric":
+    {
+      "Name": [
+        "Bikunin",
+        "Ulinastatin",
+        "Urinastarine"
+      ]
+    }
+  }
+]
+
